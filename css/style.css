@@ -1,5 +1,6 @@
 html {
     background: radial-gradient(farthest-corner at right top, #eb6f0a, #3f3427);
+    /* height: 150vw; */
     font-family: 'Roboto', cursive;
 }
 
@@ -74,12 +75,12 @@ html {
     background: #FFFFFF;
     border-radius: 10px;
     margin: 0 0 1em;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
     font-size: 20px;
-    width: 100px;
+    /* width: 100px; */
 }
 
 .item strong {
@@ -94,19 +95,19 @@ html {
 }
 
 #problema {
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
     border-radius: 10px;
     border: 2px #000 solid;
-    height: 50px;
+    height: 60px;
+    resize: none;
 }
 
 .conteudo .item__criado {
     display: flex;
-    width: 100vw;
 }
 
-.conteudo .item__criado ul {
+.item__criado ul {
     gap: 0.5rem;
     /* flex-wrap: wrap; */
 }
@@ -114,15 +115,14 @@ html {
 .conteudo .item__criado ul li {
     list-style: none;
     display: flex;
-    width: 700px;
-    gap: 10rem;
+    gap: 5rem;
     background-color: #411e5a;
     color: #FFFFFF;
+    font-size: 16px;
 }
 
 .conteudo .item__criado ul li button {
     height: 75px;
-    width: 120px;
     border-radius: 15px;
     background-color: #c27620;
     color: #FFFFFF;
