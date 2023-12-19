@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochila de viagem</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="conteudo">
+      <div class="titulo">CRIADOR DE CASO</div>
+      <div class="principal">
+        <form action="" class="adicionar" id="novoItem">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Insira o nome do cliente"
+          />
+          <label for="cnpj">CNPJ</label>
+          <input
+            type="text"
+            name="cnpj"
+            id="cnpj"
+            minlength="14"
+            maxlength="14"
+            placeholder="xx.xxx.xxx/xxxx-xx"
+          />
+          <label for="cnpj">Meio de Contato</label>
+          <input
+            type="text"
+            name="contato"
+            id="contato"
+            placeholder="Informe o meio de contato"
+          />
+          <label for="cnpj">Problema</label>
+          <textarea
+            type="text"
+            name="problema"
+            id="problema"
+            placeholder="Insira a descrição do problema"
+          ></textarea>
+          <input
+            type="submit"
+            value="Adicionar"
+            class="cadastrar"
+            id="cadastrar"
+          />
+        </form>
+      </div>
+      <div class="item__criado">
+        <ul class="lista" id="lista"></ul>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+html {
+    background: radial-gradient(farthest-corner at right top, #eb6f0a, #3f3427);
+    height: 150vw;
+    font-family: 'Roboto', cursive;
+}
+
+.conteudo {
+    margin: 0 auto;
+    padding: 10vh 3em 0;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.conteudo .titulo {
+    color: #FFFFFF;
+    font-weight: 900;
+    margin: 0 auto;
+    font-size: 26px;
+    border-bottom: #FFFFFF solid 2px;
+}
+
+
+.principal {
+    /* flex-grow: 1;
+    flex-basis: auto; */
+    padding: 2em 2em 2em;
+    box-sizing: border-box;
+    display: flex;
+    background: #c27620;
+    border-radius: 10px;
+    gap: 2em;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.adicionar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.adicionar input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: 2px solid #411e5a;
+}
+
+.adicionar label {
+    display: block;
+    font-weight: 900;
+}
+
+.cadastrar {
+    background-color: #411e5a;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    padding: 0.6em 1em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 20px;
+    width: 100px;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    Background: #C5965F;
+    font-weight: 400;
+}
+
+#problema {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px #000 solid;
+    height: 50px;
+}
+
+.conteudo .item__criado {
+    display: flex;
+    width: 100vw;
+}
+
+.conteudo .item__criado ul {
+    gap: 0.5rem;
+    /* flex-wrap: wrap; */
+}
+
+.conteudo .item__criado ul li {
+    list-style: none;
+    display: flex;
+    width: 700px;
+    gap: 10rem;
+    background-color: #411e5a;
+    color: #FFFFFF;
+}
+
+.conteudo .item__criado ul li button {
+    height: 75px;
+    width: 120px;
+    border-radius: 15px;
+    background-color: #c27620;
+    color: #FFFFFF;
+    font-weight: 900;
+}
