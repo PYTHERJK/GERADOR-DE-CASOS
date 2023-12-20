@@ -56,7 +56,7 @@ function criaElemento(item) {
     novoItem.innerHTML += `<br><br>CNPJ: ` + item.cnpj
     novoItem.innerHTML += `<br><br>Descrição: ` + item.problema
     novoItem.innerHTML += `<br><br>Mensagem de erro: Não Há <br>  
-    <br>Ambiente: Microvix ERP<br>
+    <br>Ambiente: Microvix ERP<br><br>
     =================================================`
 
     novoItem.innerHTML += `<br><br>FINALIZAÇÃO DO CASO`
