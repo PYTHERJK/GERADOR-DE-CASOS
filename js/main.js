@@ -56,10 +56,10 @@ function criaElemento(item) {
     novoItem.innerHTML += `<br><br>CNPJ: ` + item.cnpj
     novoItem.innerHTML += `<br><br>Descrição: ` + item.problema
     novoItem.innerHTML += `<br><br>Mensagem de erro: Não Há <br>  
-    <br>Ambiente: Microvix ERP
+    <br>Ambiente: Microvix ERP<br>
     =================================================`
 
-    novoItem.innerHTML += `<br>FINALIZAÇÃO DO CASO`
+    novoItem.innerHTML += `<br><br>FINALIZAÇÃO DO CASO`
     novoItem.innerHTML += `<br><br>Validado Por: ` + item.nome
     novoItem.innerHTML += `<br>Meio de contato: ` + item.contato
     novoItem.innerHTML += `<br>Causa: Dúvida `
