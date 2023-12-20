@@ -1,7 +1,11 @@
+/* body {
+    height: 150%;
+} */
+
 html {
     background: radial-gradient(farthest-corner at right top, #eb6f0a, #3f3427);
-    height: 200vw;
     font-family: 'Roboto', cursive;
+    /* height: 150%; */
 }
 
 .conteudo {
@@ -127,4 +131,21 @@ html {
     background-color: #c27620;
     color: #FFFFFF;
     font-weight: 900;
+}
+
+@media screen and (max-width: 1020px) {
+    .conteudo {   
+        width: 90%;
+        padding: 0;
+    }
+
+    .conteudo .titulo {
+        font-size: 22px;
+    }
+
+    .subtitulo{
+        font-size: 14px;
+    }
+
+    
 }
