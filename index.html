@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" /> 
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de casos</title>
@@ -20,14 +20,14 @@
       <div class="titulo">CRIADOR DE CASO</div>
       <div class="principal">
         <form action="" class="adicionar" id="novoItem">
-          <label for="nome">Nome</label>
+          <label for="nome" class="subtitulo">NOME</label>
           <input
             type="text"
             name="nome"
             id="nome"
             placeholder="Insira o nome do cliente"
           />
-          <label for="cnpj">CNPJ</label>
+          <label for="cnpj" class="subtitulo">CNPJ</label>
           <input
             type="text"
             name="cnpj"
@@ -36,15 +36,16 @@
             maxlength="14"
             placeholder="xx.xxx.xxx/xxxx-xx"
           />
-          <label for="cnpj">Meio de Contato</label>
+          <label for="cnpj" class="subtitulo">MEIO DE CONTATO</label>
           <input
             type="text"
             name="contato"
             id="contato"
             placeholder="Informe o meio de contato"
           />
-          <label for="cnpj">Problema</label>
+          <label for="cnpj" class="subtitulo">DESCRIÇÃO</label>
           <textarea
+            class="area-texto"
             type="text"
             name="problema"
             id="problema"
@@ -52,7 +53,7 @@
           ></textarea>
           <input
             type="submit"
-            value="Adicionar"
+            value=" CRIAR E COPIAR ABERTURA"
             class="cadastrar"
             id="cadastrar"
           />

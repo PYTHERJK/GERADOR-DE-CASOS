@@ -1,11 +1,11 @@
-/* body {
-    height: 150%;
-} */
+body {
+    min-height: 100%;
+}
 
 html {
     background: radial-gradient(farthest-corner at right top, #eb6f0a, #3f3427);
     font-family: 'Roboto', cursive;
-    /* height: 150%; */
+    min-height: 100%;
 }
 
 .conteudo {
@@ -66,6 +66,13 @@ html {
     background-color: #411e5a;
     color: #FFFFFF;
     cursor: pointer;
+    transition: .4s;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.cadastrar:hover{
+    transform: scale(1.02);
 }
 
 .lista {
@@ -107,6 +114,14 @@ html {
     resize: none;
 }
 
+.subtitulo::placeholder {
+    padding: 5px;
+}
+
+#problema::placeholder {
+    padding: 5px;
+}
+
 .conteudo .item__criado {
     display: flex;
 }
@@ -133,8 +148,13 @@ html {
     font-weight: 900;
 }
 
-@media screen and (max-width: 1020px) {
-    .conteudo {   
+@media screen and (max-width: 1440px) {
+    body {
+        margin: 5px;
+        height: 100%;
+    }
+
+    .conteudo {
         width: 90%;
         padding: 0;
     }
@@ -143,9 +163,6 @@ html {
         font-size: 22px;
     }
 
-    .subtitulo{
-        font-size: 14px;
-    }
 
-    
+
 }

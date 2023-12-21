@@ -5,7 +5,7 @@ const itens = JSON.parse(localStorage.getItem("itens")) || []
 itens.forEach((elemento) => {
     criaElemento(elemento)
 })
- 
+
 form.addEventListener("submit", (evento) => {
     evento.preventDefault()
 
@@ -13,7 +13,6 @@ form.addEventListener("submit", (evento) => {
     const cnpj = evento.target.elements['cnpj']
     const problema = evento.target.elements['problema']
     const contato = evento.target.elements['contato']
-    // const quantidade = 0
 
     const existe = itens.find(elemento => elemento.nome === nome.value)
 
@@ -42,7 +41,7 @@ form.addEventListener("submit", (evento) => {
 
     nome.value = ""
     cnpj.value = ""
-    problema.value = "" 
+    problema.value = ""
     contato.value = ""
 })
 
@@ -52,26 +51,32 @@ function criaElemento(item) {
     const novoItem = document.createElement("li")
     novoItem.classList.add("item")
 
-    novoItem.innerHTML += `Nome: ` + item.nome
-    novoItem.innerHTML += `<br><br>CNPJ: ` + item.cnpj
-    novoItem.innerHTML += `<br><br>Descrição: ` + item.problema
-    novoItem.innerHTML += `<br><br>Mensagem de erro: Não Há <br>  
-    <br>Ambiente: Microvix ERP<br><br>
-    =================================================`
-
-    novoItem.innerHTML += `<br><br>FINALIZAÇÃO DO CASO`
-    novoItem.innerHTML += `<br><br>Validado Por: ` + item.nome
-    novoItem.innerHTML += `<br>Meio de contato: ` + item.contato
-    novoItem.innerHTML += `<br>Causa: Dúvida `
-    novoItem.innerHTML += `<br>Resolução:`
-    novoItem.innerHTML += `<br> NPS: Estou muito feliz em concluir,mais um chamado,
+    novoItem.innerHTML +=`ABERTURA DO CASO`+ 
+        `<br><br>Nome: ` + item.nome +
+        `<br><br>CNPJ: ` + item.cnpj +
+        `<br><br>Descrição: ` + item.problema +
+        `<br><br>Mensagem de erro: Não Há <br>  
+    <br>Ambiente: Microvix POS<br><br>
+    =================================================
+    <br>
+    <br>FINALIZAÇÃO DO CASO 
+    <br><br>Validado Por: ` + item.nome +
+        `<br>Meio de contato: ` + item.contato +
+        `<br>Causa: Dúvida 
+        <br>Resolução:
+    <br> NPS: Estou muito feliz em concluir mais um chamado,
     e ter resolvido o seu incidente! Mas e você
-    ficou satisfeito com meu atendimento? Assim que o chamado for finalizado<
-    chegará em seu em-mail uma pesquisa para avaliar meu atendimento :-)`
+    ficou satisfeito com meu atendimento? Assim que o chamado for finalizado
+    chegará em seu e-mail uma pesquisa para avaliar meu atendimento :-)`
 
     novoItem.appendChild(botaoDeleta(item.id))
-
+    console.log(item.nome)
     lista.appendChild(novoItem)
+    navigator.clipboard.writeText(`Nome: ` + item.nome +
+        `\n\nCNPJ: ` + item.cnpj +
+        `\n\nDescrição: ` + item.problema +
+        `\n\nMensagem de erro: Não Há\n 
+Ambiente: Microvix POS`);
 }
 
 function botaoDeleta(id) {
@@ -92,3 +97,22 @@ function deletaElemento(tag, id) {
 
     localStorage.setItem("itens", JSON.stringify(itens))
 }
+
+// function botaoCopiar() {
+//     navigator.clipboard.writeText();
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
